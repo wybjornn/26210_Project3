@@ -19,6 +19,8 @@
             echo $statuscode = "Status Code: " . $json_data["info"]["statuscode"] . "<br>";
             echo $startloc = "Starting Location: " . $json_data["route"]["locations"][0]["adminArea5"] . " " . $json_data["route"]["locations"][0]["adminArea1"] . "<br>";
             echo $dest = "Destination: " . $json_data["route"]["locations"][1]["adminArea5"] . " " . $json_data["route"]["locations"][1]["adminArea1"] . "<br>";
+
+            echo "Testing"
         ?>
     </body>
 </html>
