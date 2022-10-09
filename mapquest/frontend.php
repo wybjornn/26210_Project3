@@ -1,6 +1,8 @@
 <html>
     <body>
         <?php
+            # Selina Maganda
+
             $StartingLocation = $_GET["StartLoc"];
             $Destination = $_GET["Dest"];
             
