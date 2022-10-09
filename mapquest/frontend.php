@@ -2,6 +2,7 @@
     <body>
         <?php
             # Selina Maganda
+            # MINECRAFT
 
             $StartingLocation = $_GET["StartLoc"];
             $Destination = $_GET["Dest"];
