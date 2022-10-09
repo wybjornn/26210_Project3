@@ -4,8 +4,6 @@
             # Selina Maganda
             # MINECRAFT
 
-            #LINTIK KAYO - neon 
-
             $StartingLocation = $_GET["StartLoc"];
             $Destination = $_GET["Dest"];
             
