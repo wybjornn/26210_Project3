@@ -1,6 +1,8 @@
 <html>
     <body>
         <?php
+            # Git Testing
+
             $StartingLocation = $_GET["StartLoc"];
             $Destination = $_GET["Dest"];
             
@@ -32,7 +34,7 @@
             # setting manuevers as an array variable, $manueverlist is the variable as a 2D array
             # to get the values in $manueverlist its $manueverlist[x]["key"]
             # x is the value and key is the keyword, it being "image", "distance", "direction", and "narrative"
-             $manueverlist = array();
+            $manueverlist = array();
             foreach($json_data["route"]["legs"][0]["maneuvers"] as $manuever)
             {
                 # distance in km with 2 decimal places
