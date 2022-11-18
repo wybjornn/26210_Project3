@@ -104,7 +104,26 @@ h1 {text-align: center;}
             echo $startloc = "Starting Location: " . $json_data["route"]["locations"][0]["adminArea5"] . " " . $json_data["route"]["locations"][0]["adminArea1"] . "<br>";
             echo $dest = "Destination: " . $json_data["route"]["locations"][1]["adminArea5"] . " " . $json_data["route"]["locations"][1]["adminArea1"] . "<br>";
             
-
+            ?>
+            <?php
+                $mapAPIkey = "AIzaSyAsQAFFhdmT6pO-G077_mFuZPpmoDcKNB0";
+                $origin = $json_data["route"]["locations"][0]["latLng"]["lat"] . ", " . $json_data["route"]["locations"][0]["latLng"]["lng"];
+                $destination = $json_data["route"]["locations"][1]["latLng"]["lat"] . ", " . $json_data["route"]["locations"][1]["latLng"]["lng"];
+            ?>
+            <iframe
+                width="600"
+                height="450"
+                style="border:0"
+                loading="lazy"
+                allowfullscreen
+                referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed/v1/directions?key=<?php echo $mapAPIkey ?>
+                &origin=<?php echo $origin ?>
+                &destination=<?php echo $destination ?>
+                &avoid=tolls|highways"
+                >
+            </iframe>
+            <?php
             # display manuevers, $manueverlist is the variable for its a 2D array
             # to get the values in $manueverlist its $manueverlist[x]["key"]
             # x is the value and key is the keyword, it being "image", "distance", "direction", and "narrative"

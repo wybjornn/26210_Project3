@@ -12,14 +12,12 @@
                 }
 
             header {
-                background color: powderblue;
                 padding: 30px;
                 margin-bottom: 25px;
                 text-align: center;
                 }
 
             footer {
-                background color: powderblue;
                 width: 100%;
                 padding: 15px;
                 margin-top: 100px;
@@ -31,14 +29,12 @@
             h1 {
                 font-family: 'Courier New', monospace;
                 font-size: 70px;
-                font-color: black;
                 margin-top: 80px;
                 }
 
                 h3 {
                 font-family: 'Courier New', monospace;
                 font-size: 30px;
-                font-color: black;
                 }
 
                 div {
